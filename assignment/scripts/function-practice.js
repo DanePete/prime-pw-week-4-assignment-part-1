@@ -73,11 +73,17 @@ console.log(getLast(favFoods));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+
+  for (let f of array) {
+    if(f == value) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
-
-
+console.log(find('pasta', favFoods));
 
 // ----------------------
 // Stretch Goals
