@@ -32,7 +32,6 @@ console.log(addNumbers(2, 5));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num1, num2, num3 ){
 
-
   let result = num1 * num2 * num3;
 
   return result;
@@ -44,9 +43,9 @@ console.log(multiplyThree(1,2,3));
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
