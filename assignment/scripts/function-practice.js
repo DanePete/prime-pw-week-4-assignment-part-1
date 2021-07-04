@@ -125,3 +125,11 @@ console.log(sumAll(numbers));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// Simple function to find the area of the a triangle
+function areaOfTriangle(base, width) {
+  result = (base * width) / 2;
+  return result;
+}
+
+console.log(areaOfTriangle(5, 8));
