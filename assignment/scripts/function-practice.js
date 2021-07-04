@@ -112,7 +112,7 @@ function sumAll(numbers) {
   return sum;
 }
 
-let numbers = [1,2,3,4,5,6,7,8,9,10];
+let numbers = [-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10];
 
 console.log(sumAll(numbers));
 
@@ -120,7 +120,18 @@ console.log(sumAll(numbers));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let postiveArray = [];
 
+function buildPositiveArray(numbers) {
+  for(let i of numbers) {
+    if(i > 0) {
+      postiveArray.push(i);
+    }
+  }
+}
+
+buildPositiveArray(numbers);
+console.log(postiveArray);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
